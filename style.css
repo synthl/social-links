@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&family=Poppins:wght@300;600&display=swap');
+
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+    --yellow: #FFE81A;
+    --gray: #323232;
+    --font-light: 300;
+    --font-bold: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.contorno-da-foto {
+    width: 213px;
+    height: 213px;
+    border-radius: 100%;
+    border: 2px solid var(--yellow);
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+body {
+    background-color: var(--gray);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
+}
+
+.contorno-da-foto img {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.tag {
+    margin-top: 15px;
+    font-weight: var(--font-light);
+    color: var(--yellow);
+}
+
+.link {
+    color: var(--yellow);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: var(--font-bold);
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border: 3px solid var(--yellow);
+    border-radius: 4px;
+    padding: 12px 163px;
+    margin: 16px 0;
+}
+
+.socials {
+    width: 200px;
+    margin-top: 20px;
+    display: inline-flex;
+    place-items: center;
+    justify-content: space-evenly;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+@media (max-width: 220px) {
+    .link {
+        padding: 4px 10px;
+    }
+
+    .tag, .socials {
+        margin: 5px 0 0 0;
+    }
+
+    .tree {
+        max-width: 210px;
+    }
+
+}
+
+@media (min-width: 221px) and (max-width: 340px) {
+
+    .link {
+        padding:4px 75px ;
+
+    }
+
+    .tag, .socials {
+        margin: 5px 0 0 0;
+    }
+
+    .tree {
+        max-width: 210px;
+    }
+
+}
+
+@media (min-width: 341px) and (max-width: 570px){
+
+    .link {
+        padding: 12px 55px ;
+
+    }
+
+    .tag, .socials {
+        margin: 5px 0 0 0;
+    }
+
+    .tree {
+        max-width: 490px;
+    }
+
+}
